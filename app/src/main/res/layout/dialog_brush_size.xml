@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brush_size_dialog">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/brushSizeTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/brush_size_monochrome" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:contentDescription="@string/choose_size"
+        android:stepSize="5.0"
+        android:valueFrom="0.0"
+        android:valueTo="150.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:trackColor="#EAB34B"
+        app:trackColorActive="@color/md_theme_light_onPrimary"
+        app:trackColorInactive="@color/md_theme_light_primary">
+
+    </com.google.android.material.slider.Slider>
+
+    <TextView
+        android:id="@+id/brushSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Brush Size:"
+        android:textColor="#EFEBEB"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/currentyoo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/currentyoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="dpi"
+        android:textAlignment="center"
+        android:textColor="#EFEBEB"
+        app:layout_constraintBottom_toTopOf="@+id/slider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

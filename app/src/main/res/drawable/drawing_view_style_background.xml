@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:shape="rectangle"
+    app:shapeAppearanceOverlay="@style/rounded_corner">
+
+    <solid
+        android:color="@color/white"
+        />
+
+    <corners
+        android:radius="8dp">
+    </corners>
+
+</shape>
